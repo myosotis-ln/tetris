@@ -1,0 +1,98 @@
+    1  memory = 24GB
+    2  memory=24GB
+    3  processors=8
+    4  swap=8GB
+    5  localhostForwarding=true
+    6  sudo apt update && sudo apt upgrade -y
+    7  sudo apt install -y  build-essential  curl wget git unzip  ca-certificates  gnupg lsb-release
+    8  ssh-keygen -t ed25519
+    9  cat ~/.ssh/id_ed25519.pub
+   10  git remote set-url origin git@github.com:dongg/agentic00.git
+   11  git remote -v
+   12  cd ~/agentic
+   13  git remote set-url origin git@github.com:dongg/agentic00.git
+   14  cd ~/agentic
+   15  ls
+   16  mkdir agentic
+   17  cd agentic
+   18  git init
+   19  git branch -M main
+   20  git remote add origin git@github.com:dongg/agentic00.git
+   21  git add .
+   22  git commit -m "first commit"
+   23  git push -u origin main
+   24  mkdir -p ~/.ssh
+   25  chmod 700 ~/.ssh
+   26  mkdir -p ~/.ssh
+   27  cp /mnt/c/Users/DDWU/.ssh/id_ed25519 ~/.ssh/
+   28  cp /mnt/c/Users/DDWU/.ssh/id_ed25519.pub ~/.ssh/
+   29  cd /mnt/c/Users/DDWU/agentic
+   30  cd /mnt/c/Users/DDWU/Desktop/agentic
+   31  git remote set-url origin git@github.com:myosotis-ln/agentic00.git
+   32  git init
+   33  git branch -M main
+   34  git remote add origin git@github.com:myosotis-ln/agentic.git
+   35  git add .
+   36  git commit -m "first commit"
+   37  git push -u origin main
+   38  git config --global user.name "SOYUN WON"
+   39  git config --global user.email "miyaong@gmail.com"
+   40  git commit -m "first commit"
+   41  git push -u origin main
+   42  echo "# Agentic Project" > README.md
+   43  git add .
+   44  git commit -m "first commit"
+   45  git push -u origin main
+   46  git add .
+   47  git commit -m "수정 내용 요약"
+   48  git push
+   49  git remote -v
+   50  uv run main.py
+   51  curl -LsSf https://astral.sh/uv/install.sh | sh
+   52  source $HOME/.local/bin/env
+   53  uv --version
+   54  uv run main.py
+   55  uv init
+   56  echo 'print("Hello, Agentic!")' > main.py
+   57  uv run main.py
+   58  uv python list
+   59  cd /home/kilroy/prj/ch09
+   60  uv python pin 3.12 
+   61  cd /home/kilroy/prj
+   62  code .
+   63  cd ~
+   64  hermes
+   65  export PATH="$HOME/.local/bin:$PATH"
+   66  hermes
+   67  ls -la ~ ~/prj; find ~ -maxdepth 3 -name "*hermes*" 2>/dev/null
+   68  which uv; tail -n 20 ~/.bash_history
+   69  mkdir -p ~/prj
+   70  cd ~/prj
+   71  curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+   72  source ~/.bashrc
+   73  hermes
+   74  cd /home/kilroy/prj/tetris
+   75  uv run tetris
+   76  cd /home/kilroy/prj/tetris
+   77  git config --global user.name "myosotis-ln"
+   78  git config --global user.email "20220839@dongduk.ac.kr"
+   79  git init
+   80  cat << 'EOF' > .gitignore
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+data/
+*.db
+.DS_Store
+EOF
+
+   81  git add .
+   82  git commit -m "Initial commit: tetris SPA"
+   83  git branch -M main
+   84  git remote add origin https://github.com/myosotis-ln/tetris.git
+   85  git push -u origin main
+   86  history > history.txt
